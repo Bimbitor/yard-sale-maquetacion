@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+
+            /* colors */
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --white: #ffffff;
+            --black: #000000;
+            --hospital-green: #acd9b2;
+            --dark: #232830;
+
+            /* font-sizes */
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+
+
+        }
+        body{
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+        }
+
+        .product-detail {
+            box-sizing: border-box;
+            width: 360px;
+            padding-bottom: 24px;
+            position: absolute;
+            right: 0;
+            border-left: 1px solid var(--very-light-pink);
+            height: 100vh;
+            
+        }
+        .product-detail-close {
+            background: var(--white);
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            top: 20px;
+            left: 24px;
+            z-index: 2;
+            padding: 12px;
+            border-radius: 50%;
+            display: flex;
+        }
+
+        .product-detail-close:hover {
+            cursor: pointer;  
+        }
+        .product-detail > img:nth-child(2) {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 0 0 20px 20px;
+            /* padding-left: 8px; */
+        }
+
+        .product-info{
+            margin: 0 24px;
+        }
+
+        .product-info p:nth-child(1){
+            font-weight: bold;
+            font-size: var(--md);
+            margin: 16px 0 4px 0;
+        }
+
+        .product-info p:nth-child(2){
+            color: var(--very-light-pink);
+            font-size: var(--md);
+            margin: 0 0 24px 0;
+        }
+
+        .product-info p:nth-child(3){
+            color: var(--very-light-pink);
+            font-size: var(--sm);
+            margin: 0 0 24px 0;
+        }
+
+        .primary-button{
+            background-color: var(--hospital-green);
+            border: none;
+            color: var(--white);
+            border-radius: 8px;
+            height: 50px;
+            width: 100%;
+            font-size: var(--md);
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .add-to-cart-button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 640px) {
+            .product-detail {
+            width: 100%;
+        }
+    }
+
+    </style>
+
+</head>
+<body>
+    <aside class="product-detail">
+        <div class="product-detail-close">
+            <img src="./Icons/icon_close.png" alt="">
+        </div>
+        <img src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2015/09/02/15/download-(2).jpg" alt="">
+        <div class="product-info">
+            <p>$ 120,00</p>
+            <p>Bike</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eum nemo iste error laudantium consequatur ducimus cum odio ut. Architecto, nam fugit ad quo error adipisci repellendus, ut distinctio excepturi, iure commodi. Minus, excepturi sed consectetur dicta natus sapiente cum eveniet, dignissimos, amet dolor tempore laboriosam id eaque? Fugit dicta laboriosam accusamus perspiciatis ducimus, consequuntur facere alias rerum distinctio saepe rem facilis similique sint eaque praesentium fuga debitis nisi ut obcaecati accusantium sequi veniam, qui blanditiis. Dicta tempora aspernatur, aliquid sint inventore illum voluptatem! Perspiciatis fugiat</p>
+            <button class="add-to-cart-button primary-button">
+                <img src="./Icons/bt_add_to_cart.svg" alt="">
+                Add to Cart
+            </button>
+        </div>
+    </aside>
+</body>
+</html>
